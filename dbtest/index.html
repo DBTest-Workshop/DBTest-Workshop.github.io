@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Workshop on Database Testing - DBTest 2020</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">DB<span>Test</span></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>Schedule</span></a></li>
+	          <li class="nav-item"><a href="#proceedings-section" class="nav-link"><span>Proceedings</span></a></li>
+	          <li class="nav-item"><a href="#comitee-section" class="nav-link"><span>Organization</span></a></li>
+              <li class="nav-item"><a href="#sponsor-section" class="nav-link"><span>Sponsors</span></a></li>
+			  <!--  <li class="nav-item"><a href="#submission-section" class="nav-link"><span>Submission</span></a></li>-->
+	          <li class="nav-item cta"><a href="https://sigmod2020.org/" target="_blank" class="nav-link">ACM SIGMOD/PODS</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero js-fullheight">
+	  	<h3 class="vr"><span>Welcome</span> to DBTest</h3>
+	  	<div id="timer" class="text-center">
+			  <div class="time" id="days"></div>
+			  <div class="time" id="hours"></div>
+			  <div class="time" id="minutes"></div>
+			  <div class="time" id="seconds"></div>
+			</div>
+		  <div class="home-slider owl-carousel js-fullheight">
+	      <div class="slider-item js-fullheight">
+	      	<div class="overlay"></div>
+	        <div class="container-fluid px-0">
+	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(images/bg_1.jpg);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text mt-4 mt-md-0">
+                        <h1 class="mb-4">8th International Workshop on <span>Testing Database Systems</span> 2020</span></h1>
+                        <h2 class="mb-4">June 19, 2020 8:00 AM PST / 17:00 PM CET in conjunction with</h2>
+                        <p><a href="https://sigmod2020.org/" target="_blank" class="btn btn-primary py-3 px-4">ACM SIGMOD/PODS</a> <!--a href="#" class="btn btn-white py-3 px-4">Watch Video</a></p-->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+    </section>
+
+    <section class="ftco-about ftco-counter ftco-no-pb img ftco-section" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about-1.jpg);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 pt-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<span class="subheading">Welcome</span>
+		            <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About DBTest</h2>
+		           <p>With the ever increasing amount of data stored and processed, there is an ongoing need of testing database management systems but also data-intensive systems in general. Specifically, emerging new technologies such as Non-Volatile Memory impose new challenges (e.g., avoiding persistent memory leaks and partial writes), and novel system designs including FPGAs, GPUs, and RDMA call for additional attention and sophistication.</p>
+                   
+                    <p>Reviving the previous success of the seven previous workshops, the goal of DBTest 2020 is to bring researchers and practitioners from academia and industry together to discuss key problems and ideas related to testing database systems and applications. The long-term objective is to reduce the cost and time required to test and tune data management and processing products so that users and vendors can spend more time and energy on actual innovations. </p>
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+    	<div class="container-fluid px-0">
+    		<div class="row no-gutters">
+	  			<div class="col-md-6 col-lg-3 ftco-animate">
+	  				<div class="gallery img" style="background-image: url(images/gallery-1.jpg);">
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-lg-3 ftco-animate">
+	  				<div class="gallery img" style="background-image: url(images/gallery-2.jpg);">
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-lg-3 ftco-animate">
+	  				<div class="gallery img" style="background-image: url(images/gallery-3.jpg);">
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-lg-3 ftco-animate">
+	  				<div class="gallery img" style="background-image: url(images/gallery-4.jpg);">
+	  				</div>
+	  			</div>
+    		</div>
+    	</div>
+    </section>
+		
+		<section class="ftco-section ftco-subscribe img" style="background-image: url(images/bg_2.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-14 heading-section heading-section-white text-left ftco-animate">
+            <h2 class="mb-4">Topics Of Interest</h2>
+            <p><ul>
+                <li>Testing of database systems, storage services, and database applications </li>
+                <li>Testing of database systems using novel hardware and software technology (non-volatile memory, hardware transactional memory, …)</li>
+                <li>Testing heterogeneous systems with hardware accelerators (GPUs, FPGAs, ASICs, …)</li>
+                <li>Testing distributed and big data systems</li>
+                <li>Testing machine learning systems</li>
+                <li>Specific challenges of testing and quality assurance for cloud-based systems</li>
+                <li>War stories and lessons learned</li>
+                <li>Performance and scalability testing</li>
+                <li>Testing the reliability and availability of database systems</li>
+                <li>Algorithms and techniques for automatic program verification</li>
+                <li>Maximizing code coverage during testing of database systems and applications</li>
+                <li>Generation of synthetic data for test databases
+                <li>Testing the effectiveness of adaptive policies and components
+                <li>Tools for analyzing database management systems (e.g., profilers, debuggers)</li>
+                <li>Workload characterization with respect to performance metrics and engine components</li>
+                <li>Metrics for test quality, robustness, efficiency, and effectiveness</li>
+                <li>Operational aspects such as continuous integration and delivery pipelines</li>
+                <li>Security and vulnerability testing</li>
+                <li>Experimental reproduction of benchmark results</li>
+                <li>Functional and performance testing of interactive data exploration systems</li>
+                <li>Tracability, reproducibility and reasoning for ML-based systems</li>
+            </ul></p>
+          </div>
+        </div>
+		</div>
+		</section>
+              
+ <!--
+  <section class="ftco-section" id="submission-section">
+                <div class="container">
+                    <div class="row justify-content-center pb-5">
+              <div class="col-md-12 heading-section text-center ftco-animate">
+                <span class="subheading">Details</span>
+                <h2 class="mb-4">Paper Submission</h2>
+                <p>Authors are invited to submit original, unpublished research papers that are not being considered for publication in any other forum. </p>
+              </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6 ftco-animate">
+                    <div class="pricing-entry pb-5 text-center">
+                        <div>
+                            <h3 class="mb-4">Submission Guideline</h3>
+                                     </div>
+                        <ul>
+                                 
+                            <li>Expected 4 to 6 pages including references and appendix</li>
+                    
+                                    <li>Follow <a href="https://www.acm.org/publications/proceedings-template" target="_blank"> most recent  ACM Proceedings Format </a></li>
+            
+                                    <li>Submission will be handled through Easy Chair</li>
+            
+                        </ul>
+                        <p class="button text-center"><a href="https://easychair.org/conferences/?conf=dbtest2020" target="_blank" class="btn btn-primary px-4 py-3">Easy Chair</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 ftco-animate">
+                    <div class="pricing-entry pb-25 text-center">
+                        <div>
+                            <h3 class="mb-4">Timeline</h3>
+                            <p><span class="price">March 6, 2020</span> <span class="per">/ 11:59PM US EDT</span></p>
+                            <h6 class="mb-4">Submission</h6>
+                              <p><span class="price">April 6, 2020</span> <span class="per">/ 11:59PM US EDT</span></p>
+                              <h6 class="mb-4">Notification Of Outcome</h6>
+                                <p><span class="price">April 31, 2020</span> <span class="per">/ 11:59PM US EDT</span></p>
+                                <h6 class="mb-4">Camera-Ready Copy</h6>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                </div>
+            </section>
+ -->
+ 
+		<section class="ftco-section bg-light" id="schedule-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading">Schedule</span>
+            <h2 class="mb-4">Program Schedule and Recordings</h2>
+            <p>As most workshops associated with this year's SIGMOD (and SIGMOD 2020 itself), DBTest will be a virtual workshop. We will use the Zoom video conferencing platform to stream the presentations, and have an interactive discussion about the papers and topics presented at the workshop.</p>
+<p> The program for this year features three keynotes, five full papers and two short papers, and is structured as follows (all times are PST):</p>
+
+<table class="table-bordered table-striped" style="color:black">
+  <tr>
+    <!-- <th style="width: 10%">Starts at</th> -->
+    <th>Title</th>
+    <th>Presenter</th>
+	<th>Recording</th>
+	<th>Slides</th>
+  </tr>
+  <!--<tr><td>08.00 AM</td><td>Welcome</td><td>Pinar T&ouml;z&uuml;n and Alexander B&ouml;hm</td><td></td><td></td></tr>-->
+  <tr><!--<td>08.10 AM</td>--><td>Keynote 1: From HyPer to Hyper: Integrating an academic DBMS into a leading analytics and business intelligence platform</td><td>Tobias M&uuml;hlbauer and Jan Finis</td><td><a href="https://youtu.be/iAlkUq411mc" target="_blank">https://youtu.be/iAlkUq411mc</a></td><td><a href='./slides/Keynote1.pdf' target="_blank">Slides</a></td></tr>
+  <tr><!--<td>08.55 AM</td>--><td>SparkFuzz: Searching Correctness Regressions in Modern Query Engines</td><td>Bogdan Ghit, Nicolas Poggi, Josh Rosen, Reynold Xin and Peter Boncz</td><td><a href="https://youtu.be/l90E5EUCKQA" target="_blank">https://youtu.be/l90E5EUCKQA</a></td><td><a href='./slides/sparkfuzz.pdf' target="_blank">Slides</a></td></tr>
+  <tr><!--<td>09.05 AM</td>--><td>On Another Level: How to Debug Compiling Query Engines</td><td>Timo Kersten and Thomas Neumann</td><td><a href="https://youtu.be/vIcoM2cyLKs" target="_blank">https://youtu.be/vIcoM2cyLKs</a></td><td><a href='./slides/MultilevelDebugger.pdf' target="_blank">Slides</a></td></tr>
+  <!-- <tr><td>09.25 AM</td><td colspan="2">Short Break</td><td></td><td></td><td></td></tr> -->
+  <tr><!--<td>09.45 AM</td>--><td>Keynote 2: Benchmark(et)ing an LSM-Tree vs a B-Tree</td><td>Mark Callaghan</td><td><a href="https://youtu.be/vyLZHx9aZQc" target="_blank">https://youtu.be/vyLZHx9aZQc</a></td><td><a href='https://docs.google.com/presentation/d/1bLnIlGSBopb3dFk8v7sWWb9R2mHAOkOUzsNIvw-jt9c/edit?usp=sharing' target="_blank">Slides</a></td></tr>
+  <tr><!--<td>10.30 AM</td>--><td>Automated System Performance Testing at MongoDB</td><td>Henrik Ingo and David Daly</td><td><a href="https://youtu.be/FI5BrYkWNvg" target="_blank">https://youtu.be/FI5BrYkWNvg</a></td><td><a href='http://henrikingo.github.io/presentations/dbtestio%202020%20-%20Automated%20System%20Performance%20Testing%20at%20MongoDB/index.html' target="_blank">Slides</a></td></tr>
+  <tr><!--<td>10.50 AM</td>--><td>CoreBigBench: Benchmarking Big Data Core Operations</td><td>Todor Ivanov, Ahmad Ghazal, Alain Crolotte, Pekka Kostamaa and Yoseph Ghazal</td><td><a href="https://youtu.be/V8SdCOl7VyM" target="_blank">https://youtu.be/V8SdCOl7VyM</a></td><td><a href='./slides/CoreBigBench.pdf' target="_blank">Slides</a></td></tr>
+  <tr><!--<td>11.10 AM</td>--><td>FacetE: Exploiting Web Tables for Domain-Specific Word Embedding Evaluation</td><td>Michael G&uuml;nther, Paul Sikorski, Maik Thiele and Wolfgang Lehner</td><td><a href="https://youtu.be/UE3ZW5HIGDw" target="_blank">https://youtu.be/UE3ZW5HIGDw</a></td><td><a href='./slides/FacetE.pdf' target="_blank">Slides</a></td></tr>
+  <!--<tr><td>11.30 AM</td><td colspan="2">Short Break</td><td></td><td></td><td></td></tr>-->
+  <tr><!--<td>11.50 AM</td>--><td>Keynote 3: How to clear your backlog of failing tests and make your test suite All Green</td><td>Greg Law</td><td><a href="https://youtu.be/WH5Gu9RC6to" target="_blank">https://youtu.be/WH5Gu9RC6to</a></td><td></td></tr>
+  <tr><!--<td>12.20 PM</td>--><td>Testing Query Execution Engines with Mutations</td><td>Xinyue Chen, Chenglong Wang and Alvin Cheung</td><td></td><td><a href='./slides/Testing_Query_Engines_with_Mutations.pdf' target="_blank">Slides</a></td></tr>
+  <tr><!--<td>12.40 PM</td>--><td>Workload Merging Potential in SAP Hybris</td><td>Robin Rehrmann, Martin Keppner, Wolfgang Lehner, Carsten Binnig and Arne Schwarz</td><td><a href="https://youtu.be/eUfnuvsy-Mw" target="_blank">https://youtu.be/eUfnuvsy-Mw</a></td><td><a href='./slides/WorkloadMerging.pdf' target="_blank">Slides</a></td></tr>
+  <!--<tr><td>12.50 PM</td><td>Closing</td><td>Pinar T&ouml;z&uuml;n and Alexander B&ouml;hm</td><td></td><td></td></tr>-->
+</table>
+<br/>
+<p> We are still in the process of collecting and uploading the remaining videos and slides that are not yet available above, please stay tuned.</p>
+          </div>
+        </div>
+
+
+
+		<section class="ftco-section bg-light" id="proceedings-section">
+
+          	 <div class="col-md-12 heading-section text-center ftco-animate">
+                   <span class="subheading">Proceedings</span>
+                           <div class="col-md-12 heading-section text-center ftco-animate">
+                                       <center>
+                                             <!--span class="subheading">Speakers</span-->
+                                             <h2 class="mb-4">Papers</h2>
+		</div>
+		</div>
+
+
+      <div id="DLtoc">
+         <div id="DLheader">
+            <h1>DBTest '20: Proceedings of the Workshop on Testing Database Systems</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" href="https://dl.acm.org/doi/proceedings/10.1145/3395032"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+               Full Citation in the ACM Digital Library
+               </a></div>
+         <div id="DLcontent">
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3395032.3395327">SparkFuzz: searching correctness regressions in modern query engines</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Bogdan Ghit</li>
+               <li class="nameList">Nicolas Poggi</li>
+               <li class="nameList">Josh Rosen</li>
+               <li class="nameList">Reynold Xin</li>
+               <li class="nameList Last">Peter Boncz</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>With more than 1200 contributors, Apache Spark is one of the most actively developed
+                     open source projects. At this scale and pace of development, mistakes are bound to
+                     happen. In this paper we present SparkFuzz, a toolkit we developed at Databricks for
+                     uncovering correctness errors in the Spark SQL engine. To guard the system against
+                     correctness errors, SparkFuzz takes a fuzzing approach to testing by generating random
+                     data and queries. Spark-Fuzz executes the generated queries on a reference database
+                     system such as PostgreSQL which is then used as a test oracle to verify the results
+                     returned by Spark SQL. We explain the approach we take to data and query generation
+                     and we analyze the coverage of SparkFuzz. We show that SparkFuzz achieves its current
+                     maximum coverage relatively fast by generating a small number of queries.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3395032.3395321">On another level: how to debug compiling query engines</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Timo Kersten</li>
+               <li class="nameList Last">Thomas Neumann</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Compilation-based query engines generate and compile code at runtime, which is then
+                     run to get the query result. In this process there are two levels of source code involved:
+                     The code of the code generator itself and the code that is generated at runtime. This
+                     can make debugging quite indirect, as a fault in the generated code was caused by
+                     an error in the generator. To find the error, we have to look at both, the generated
+                     code and the code that generated it. Current debugging technology is not equipped
+                     to handle this situation. For example, GNU's gdb only offers facilities to inspect
+                     one source line, but not multiple source levels. Also, current debuggers are not able
+                     to reconstruct additional program state for further source levels, thus, context is
+                     missing during debugging. In this paper, we show how to build a multi-level debugger
+                     for generated queries that solves these issues.We propose to use a timetravelling
+                     debugger to provide context information for compile-time and runtime, thus providing
+                     full interactive debugging capabilities for every source level.We also present how
+                     to build such a debugger with low engineering effort by combining existing tool chains.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3395032.3395323">Automated system performance testing at MongoDB</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Henrik Ingo</li>
+               <li class="nameList Last">David Daly</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Distributed Systems Infrastructure (DSI) is MongoDB's framework for running fully
+                     automated system performance tests in our Continuous Integration (CI) environment.
+                     To run in CI it needs to automate everything end-to-end: provisioning and deploying
+                     multinode clusters, executing tests, tuning the system for repeatable results, and
+                     collecting and analyzing the results. Today DSI is MongoDB's most used and most useful
+                     performance testing tool. It runs almost 200 different benchmarks in daily CI, and
+                     we also use it for manual performance investigations. As we can alert the responsible
+                     engineer in a timely fashion, all but one of the major regressions were fixed before
+                     the 4.2.0 release. We are also able to catch net new improvements, of which DSI caught
+                     17. We open sourced DSI in March 2020.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3395032.3395324">CoreBigBench: Benchmarking big data core operations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Todor Ivanov</li>
+               <li class="nameList">Ahmad Ghazal</li>
+               <li class="nameList">Alain Crolotte</li>
+               <li class="nameList">Pekka Kostamaa</li>
+               <li class="nameList Last">Yoseph Ghazal</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Significant effort was put into big data benchmarking with focus on end-to-end applications.
+                     While covering basic functionalities implicitly, the details of the individual contributions
+                     to the overall performance are hidden. As a result, end-to-end benchmarks could be
+                     biased toward certain basic functions. Micro-benchmarks are more explicit at covering
+                     basic functionalities but they are usually targeted at some highly specialized functions.
+                     In this paper we present CoreBigBench, a benchmark that focuses on the most common
+                     big data engines/platforms functionalities like scans, two way joins, common UDF execution
+                     and more. These common functionalities are benchmarked over relational and key-value
+                     data models which covers majority of data models. The benchmark consists of 22 queries
+                     applied to sales data and key-value web logs covering the basic functionalities. We
+                     ran CoreBigBench on Hive as a proof of concept and verified that the benchmark is
+                     easy to deploy and collected performance data. Finally, we believe that CoreBigBench
+                     is a good fit for commercial big data engines performance testing focused on basic
+                     engine functionalities not covered in end-to-end benchmarks.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3395032.3395325">FacetE: exploiting web tables for domain-specific word embedding evaluation</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Michael Günther</li>
+               <li class="nameList">Paul Sikorski</li>
+               <li class="nameList">Maik Thiele</li>
+               <li class="nameList Last">Wolfgang Lehner</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Today's natural language processing and information retrieval systems heavily depend
+                     on word embedding techniques to represent text values. However, given a specific task
+                     deciding for a word embedding dataset is not trivial. Current word embedding evaluation
+                     methods mostly provide only a one-dimensional quality measure, which does not express
+                     how knowledge from different domains is represented in the word embedding models.
+                     To overcome this limitation, we provide a new evaluation data set called FacetE derived
+                     from 125M Web tables, enabling domain-sensitive evaluation. We show that FacetE can
+                     effectively be used to evaluate word embedding models. The evaluation of common general-purpose
+                     word embedding models suggests that there is currently no best word embedding for
+                     every domain.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3395032.3395322">Testing query execution engines with mutations</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Xinyue Chen</li>
+               <li class="nameList">Chenglong Wang</li>
+               <li class="nameList Last">Alvin Cheung</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>Query optimizer engine plays an important role in modern database systems. However,
+                     due to the complex nature of query optimizers, validating the correctness of a query
+                     execution engine is inherently challenging. In particular, the high cost of testing
+                     query execution engines often prevents developers from making fast iteration during
+                     the development process, which can increase the development cycle or lead to production-level
+                     bugs. To address this challenge, we propose a tool, MutaSQL, that can quickly discover
+                     correctness bugs in SQL execution engines. MutaSQL generates test cases by mutating
+                     a query <em>Q</em> over database <em>D</em> into a query <em>Q</em>′ that should evaluate to the same result as <em>Q</em> on <em>D</em>. MutaSQL then checks the execution results of <em>Q</em>′ and <em>Q</em> on the tested engine. We evaluated MutaSQL on previous SQLite versions with known
+                     bugs as well as the newest SQLite release. The result shows that MutaSQL can effectively
+                     reproduce 34 bugs in previous versions and discover a new bug in the current SQLite
+                     release.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+            						
+            <h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" href="https://dl.acm.org/doi/abs/10.1145/3395032.3395326">Workload merging potential in SAP Hybris</a></h3>
+            <ul class="DLauthors">
+               <li class="nameList">Robin Rehrmann</li>
+               <li class="nameList">Martin Keppner</li>
+               <li class="nameList">Wolfgang Lehner</li>
+               <li class="nameList">Carsten Binnig</li>
+               <li class="nameList Last">Arne Schwarz</li>
+            </ul>
+            <div class="DLabstract">
+               <div style="display:inline">
+                  		
+                  <p>OLTP DBMSs in enterprise scenarios are often facing the challenge to deal with workload
+                     peaks resulting from events such as <em>Cyber Monday</em> or <em>Black Friday</em>. The traditional solution to prevent running out of resources and thus coping with
+                     such workload peaks is to use a significant over-provisioning of the underlying infrastructure.
+                     Another direction to cope with such peak scenarios is to apply resource sharing. In
+                     a recent work, we showed that merging read statements in OLTP scenarios offers the
+                     opportunity to maintain low latency for systems under heavy load without over-provisioning.
+                  </p> 
+                  <p>In this paper, we analyze a real enterprise OLTP workload --- SAP Hybris --- with
+                     respect to statements types, complexity, and hot-spot statements to find potential
+                     candidates for workload sharing in OLTP. We additionally share work of the Hybris
+                     workload in our system OLTPShare and report on savings with respect to CPU consumption.
+                     Another interesting effect we show is that with OLTPShare, we can increase the SAP
+                     Hybris throughput by 20%.
+                  </p>
+                  	
+               </div>
+            </div>
+            						
+            					
+         </div>
+      </div>
+</section>
+</section>
+        
+
+
+
+
+ 
+		<section class="ftco-section ftco-speakers" id="comitee-section">
+                   <div class="container">
+                       <center>
+                       <div class="row justify-content-center pb-5">
+                 <div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+                   <span class="subheading">Organization</span>
+                  
+  
+                           <div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+                                       <center>
+                                             <h2 class="mb-4">Programm Committee</h2>
+
+                           
+                           <div class="row", text-align:center>
+                              <div class="col-sm-12 col-md-12 col-lg-12 ftco-animate">
+                               <div class="staff">
+                                   <div>
+                                   Anastasia Ailamaki, EPFL, Switzerland <br>
+                                   Anisoara Nica, SAP SE, Canada  <br>
+                                   Anja Grünheid, Google, USA<br>
+                                   Artur Andrzejak, University of Heidelberg, Germany <br>
+                                   Caetano Sauer, Tableau, Germany <br>
+                                   Danica Porobic, Oracle, USA <br>
+                                   Eric Lo, Chinese University of Hong Kong,Hong Kong  <br>
+                                   Eva Sitaridi, Amazon Web Services,USA <br>
+                                   Hannes Mühleisen, CWI, The Netherlands <br>
+                                   Ioana Manolescu, INRIA, France <br>
+                                   Joy Aruljay,Georgia Tech, USA <br>
+                                   Julia Stoyanovich, NYU, USA <br>
+                                   Leo Giakoumakis, Snowflake, USA <br>
+                                   Renata Borovica-Gajic, University of Melbourne, Australia <br>
+                                   Wolfram Wingerath, Baqend, Germany <br>
+                                   Zsolt Istvan, IMDEA, Spain <br>
+                                   </div>
+                                   </div>
+                         
+                                                 
+                       </div>
+                   </div>
+               </center>
+                                     
+                                                         
+                                                      
+                                                         <div class="row justify-content-center pb-5">
+                                                                                 <div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+                                                              
+                                                                                   <h2 class="mb-4">Workshop Co-Chairs</h2>
+                                                                                 </div>
+                                                                               </div>
+                                                     
+                                                     
+                                                    
+                                                                   
+                                                                   <div class="row">
+                                                                               <div class="col-sm-12 col-md-6 col-lg-6 ftco-animate">
+                                                                                   <div class="staff">
+                                                                                       <div class="img-wrap d-flex align-items-stretch justify-content-end">
+                                                                                           
+                                                                                       </div>
+                                                                                       <div class="text d-flex align-items-center pt-3">
+                                                                                           <div>
+                                                                                                 <h3 class="mb-2"><a href="mailto:pinar@dbtest.io?subject=DBTest">Pinar <br>Tözün</a></h3>
+                                                                                               <span class="position mb-4">ITU Copenhagen, Denmark</span>
+                                                                               </div>
+                                                                                       </div>
+                                                                                   </div>
+                                                                               </div>
+                                                                               <div class="col-sm-12 col-md-6 col-lg-6 ftco-animate">
+                                                                                   <div class="staff">
+                                                                                       
+                                                                                       <div class="text d-flex align-items-center pt-3">
+                                                                                           <div>
+                                                                                               <h3 class="mb-2"><a href="mailto:alexander@dbtest.io?subject=DBTest">Alexander <br>Böhm</a></h3>
+                                                                                               <span class="position mb-4">SAP SE, Germany</span>
+                                                                               </div>
+                                                                                       </div>
+                                                                                   </div>
+                                                                             
+                                                                               
+                                             
+                                                       </div>
+                                                                               
+                                                                               </div>
+                                                                               <div class="row justify-content-center pb-5">
+                                                                                                                                                             <div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+                                                                               
+                                                                               <h2 class="mb-4">Steering Comitee</h2>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                  <div class="row">
+                                                                                                                                              <div class="col-sm-12 col-md-4 col-lg-4 ftco-animate">
+                                                                                                                                                  <div class="staff">
+                                                                                                                                                      <div class="img-wrap d-flex align-items-stretch justify-content-end">
+                                                                                                                                                          
+                                                                                                                                                      </div>
+                                                                                                                                                      <div class="text d-flex align-items-center pt-3">
+                                                                                                                                                          <div>
+                                                                                                                                                                <h3 class="mb-2"><a href="mailto:carsten@dbtest.io?subject=DBTest">Carsten <br>Binnig</a></h3>
+                                                                                                                                                              <span class="position mb-4">TU Darmstadt, Germany</span>
+                                                                                                                                              </div>
+                                                                                                                                                      </div>
+                                                                                                                                                  </div>
+                                                                                                                                              </div>
+                                                                                                                                              <div class="col-sm-12 col-md-4 col-lg-4 ftco-animate">
+                                                                                                                                                  <div class="staff">
+                                                                                                                                                      
+                                                                                                                                                      <div class="text d-flex align-items-center pt-3">
+                                                                                                                                                          <div>
+                                                                                                                                                              <h3 class="mb-2"><a href="mailto:alexander@dbtest.io?subject=DBTest">Alexander <br>Böhm</a></h3>
+                                                                                                                                                              <span class="position mb-4">SAP SE, Germany</span>
+                                                                                                                                              </div>
+                                                                                                                                                      </div>
+                                                                                                                                                  </div>
+                                                                                                                                              </div>
+                                                                                                                                              <div class="col-sm-12 col-md-4 col-lg-4 ftco-animate">
+                                                                                                                                                  <div class="staff">
+                                                                                                                                                      
+                                                                                                                                                      <div class="text d-flex align-items-center pt-3">
+                                                                                                                                                          <div>
+                                                                                                                                                                <h3 class="mb-2"><a href="mailto:tilmann@dbtest.io?subject=DBTest">Tilmann <br>Rabl</a></h3>
+                                                                                                                                                              <span class="position mb-4">TU Berlin, Germany</span>
+                                                                                                                                              </div>
+                                                                                                                                                      </div>
+                                                                                                                                                  </div>
+                                                                                                                                              </div>
+                                                                                                                                      
+                                                     
+                                       
+               </section>
+        
+ 
+
+
+
+    <section class="ftco-section bg-light" id="sponsor-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Support</span>
+            <h2 class="mb-4">Our Sponsors</h2>
+            <p>DBTest is supported by the following sponsors:</p>
+       
+        <div>
+                    <figure><a href="https://www.snowflake.com/" target="_blank"><img src="images/snow.png" /></a></figure>
+                    <figure><a href="https://www.undo.io/" target="_blank"><img src="images/undo.png" style="width:224px;"/></a></figure>
+        </div>
+        <p></p>
+        <div>
+                           <figure><a href="https://www.sap.com/" target="_blank"><img src="images/sap.png" style="width:224px;"/></a></figure>
+                           <figure><a href="https://www.ibm.com/" target="_blank"><img src="images/ibm.png" style="width:224px;"/></a></figure>
+	</div>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+           
+    
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About DBTest</h2>
+              <p>Fail early, fail often, but always fail forward -- John C. Maxwell</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://twitter.com/Dbtest_io" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.youtube.com/channel/UCK6KE6oJvqF2YHm1qa065Og" target="_blank"><span class="icon-youtube"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#comitee-section"><span class="icon-long-arrow-right mr-2"></span>Organization</a></li>
+                <li><a href="#schedule-section"><span class="icon-long-arrow-right mr-2"></span>Schedule</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Previous Editions</h2>
+              <ul class="list-unstyled">
+                <li><a href="https://dsg.uwaterloo.ca/dbtest2011/" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2011</a></li>
+                <li><a href="http://dbtest2012.comp.polyu.edu.hk/" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2012</a></li>
+                <li><a href="https://dbtest2013.soe.ucsc.edu/index.htm" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2013</a></li>
+                <li><a href="http://dbtest.dima.tu-berlin.de/" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2018</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Venue (co-located with SIGMOD/PODS)</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+                      
+	                <li><span class="icon icon-map-marker"></span><span class="text">1000 NE Multnomah Street, Portland, Oregon, 97232, USA</span></li>
+	                
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
