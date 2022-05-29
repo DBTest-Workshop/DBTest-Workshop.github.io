@@ -118,7 +118,7 @@
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <!--<li class="nav-item"><a href="#schedule-section" class="nav-link"><span>Schedule</span></a></li> -->
-	          <!--<li class="nav-item"><a href="#proceedings-section" class="nav-link"><span>Proceedings</span></a></li>-->
+	          <li class="nav-item"><a href="#proceedings-section" class="nav-link"><span>Proceedings</span></a></li>
 	          <li class="nav-item"><a href="#comitee-section" class="nav-link"><span>Organization</span></a></li>
               <li class="nav-item"><a href="#sponsor-section" class="nav-link"><span>Sponsors</span></a></li>
 		  <li class="nav-item"><a href="#submission-section" class="nav-link"><span>Submission</span></a></li>
@@ -145,7 +145,7 @@
 	          	</div>
 		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text mt-4 mt-md-0">
-                        <h1 class="mb-4">9th International Workshop on <span>Testing Database Systems</span> 2022</span></h1>
+                        <h1 class="mb-4">9th International Workshop on <span>Testing Database Systems</span> 2022</h1>
                         <h2 class="mb-4">June 17, 2022 in conjunction with</h2>  
                          <!--<h2 class="mb-4">June 19, 2020 8:00 AM PST / 17:00 PM CET in conjunction with</h2> -->
                         <p><a href="https://2022.sigmod.org/" target="_blank" class="btn btn-primary py-3 px-4">ACM SIGMOD/PODS</a> <!--a href="#" class="btn btn-white py-3 px-4">Watch Video</a></p-->
@@ -154,6 +154,7 @@
 	        	</div>
 	        </div>
 	      </div>
+	    </div>
     </section>
 
     <section class="ftco-about ftco-counter ftco-no-pb img ftco-section" id="about-section">
@@ -180,6 +181,45 @@
         </div>
     	</div>
     </section>
+
+
+			<section class="ftco-section bg-light" id="proceedings-section">
+    	<div class="container">
+
+          	 <div class="col-md-12 heading-section text-center ftco-animate">
+                   <span class="subheading">Proceedings</span>
+                           <div class="col-md-12 heading-section text-center ftco-animate">
+                                       <center>
+                                             <!--span class="subheading">Speakers</span-->
+                                             <h2 class="mb-4">Papers</h2>
+                                       </center>
+                          </div>
+             </div>
+		
+
+
+       <title>DBTest '22: Proceedings of the 2022 workshop on 9th International Workshop of Testing Database Systems</title>
+	
+	<div id="DLtoc"><div id="DLheader"><h1>DBTest '22: Proceedings of the 2022 workshop on 9th International Workshop of Testing Database Systems</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/proceedings/10.1145/3531348"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+                Full Citation in the ACM Digital Library
+            </a></div><div id="DLcontent">
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3531348.3532176">DeepBench: Benchmarking JSON Document Stores</a></h3><ul class="DLauthors"><li class="nameList">Stefano Belloni</li><li class="nameList">Daniel Ritter</li><li class="nameList">Marco Schröder</li><li class="nameList Last">Nils Rörup</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>The growing popularity of JSON as exchange and storage format in business and analytical applications led to its rapid dissemination, thus making a timely storage and processing of JSON documents crucial for organizations. Consequently, specialized JSON document stores are ubiquitously used for diverse domain-specific workloads, while a JSON-specific benchmark is missing.</p> <p>In this work, we specify DeepBench, an extensible, scalable benchmark that addresses nested JSON data, as well as queries over JSON documents. DeepBench features configurable domain-independent (e. g., varying document sizes, concurrent users) and JSON-specific scale levels (e. g., object, array nesting). The evaluation of well-known document stores with a prototypical DeepBench implementation shows its versatility and gives new insights into potential weaknesses that were not found by existing, non-JSON benchmarks</p>
+	</div></div>
+						
+					
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3531348.3532177">Journey of Migrating Millions of Queries on The Cloud</a></h3><ul class="DLauthors"><li class="nameList">Taro L. Saito</li><li class="nameList">Naoki Takezoe</li><li class="nameList">Yukihiro Okada</li><li class="nameList">Takako Shimamoto</li><li class="nameList">Dongmin Yu</li><li class="nameList">Suprith Chandrashekharachar</li><li class="nameList">Kai Sasaki</li><li class="nameList">Shohei Okumiya</li><li class="nameList">Yan Wang</li><li class="nameList">Takashi Kurihara</li><li class="nameList">Ryu Kobayashi</li><li class="nameList">Keisuke Suzuki</li><li class="nameList">Zhenghong Yang</li><li class="nameList Last">Makoto Onizuka</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>Treasure Data is processing millions of distributed SQL queries every day on the cloud. Upgrading the query engine service at this scale is challenging because we need to migrate all of the production queries of the customers to a new version while preserving the correctness and performance of the data processing pipelines. To ensure the quality of the query engines, we utilize our query logs to build customer-specific benchmarks and replay these queries with real customer data in a secure pre-production environment. To simulate millions of queries, we need effective minimization of test query sets and better reporting of the simulation results to proactively find incompatible changes and performance regression of the new version. This paper describes the overall design of our system and shares various challenges in maintaining the quality of the query engine service on the cloud.</p>
+	</div></div>
+						
+					
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3531348.3532178">FuzzyData: A Scalable Workload Generator for Testing Dataframe Workflow Systems</a></h3><ul class="DLauthors"><li class="nameList">Mohammed Suhail Rehman</li><li class="nameList Last">Aaron Elmore</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>Dataframes have become a popular means to represent, transform and analyze data. This approach has gained traction and a large user base for data science practitioners - resulting in a new wave of systems that implement a dataframe API but allow for performance, efficiency, and distributed/parallel extensions to systems such as R and pandas. However, unlike relational databases and NoSQL systems with a variety of benchmarking, testing, and workload generation suites, there is an acute lack of similar tools for dataframe-based systems. This paper presents fuzzydata, a first step in providing an extensible workflow generation system that targets dataframe-based APIs. We present an abstract data processing workflow model, random table and workflow generators, and three clients implemented using our model. Using fuzzydata, we can encode a real-world workflow or randomly generate workflows using various parameters. These workflows can be scaled and replayed on multiple systems to provide stress testing, performance evaluation, and a breakdown of performance bottlenecks present on popular dataframe systems.</p>
+	</div></div>
+						
+					</div></div></div>
+    </section>
+
 
     <section class="ftco-section ftco-no-pb ftco-no-pt">
     	<div class="container-fluid px-0">
