@@ -9113,6 +9113,76 @@ h1, h2, h3, h4, h5,
     .pricing-entry:hover .price, .pricing-entry:focus .price {
       color: #fbb901; }
 
+
+.pricing-entry-green {
+  border: 2px solid #28a745;
+  position: relative;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  @media (max-width: 767.98px) {
+    .pricing-entry-green {
+      margin-bottom: 4em; } }
+  .pricing-entry-green > div {
+    padding: 40px; }
+    .pricing-entry-green > div p {
+      margin-bottom: 0; }
+  .pricing-entry-green h3 {
+    font-size: 28px;
+    font-weight: 500; }
+  .pricing-entry-green p .price {
+    font-weight: 900;
+    font-size: 28px;
+    color: #28a745;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .pricing-entry-green p .per {
+    font-size: 12px; }
+  .pricing-entry-green ul {
+    margin: 0;
+    padding: 0; }
+    .pricing-entry-green ul li {
+      list-style: none;
+      padding: 10px 20px;
+      color: rgba(0, 0, 0, 0.7); }
+      .pricing-entry-green ul li:nth-child(odd) {
+        background: #fafafa; }
+  .pricing-entry-green .button {
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .pricing-entry-green .button .btn {
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      border-radius: 30px;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .pricing-entry-green:hover, .pricing-entry-green:focus {
+    border: 2px solid #fbb901; }
+    .pricing-entry-green:hover .btn, .pricing-entry-green:focus .btn {
+      background: #fbb901 !important;
+      border: 1px solid #fbb901 !important;
+      color: #fff !important; }
+    .pricing-entry-green:hover .price, .pricing-entry-green:focus .price {
+      color: #fbb901; }
+      
+      
 .aside-stretch {
   background: #3666ff; }
   .aside-stretch:after {
