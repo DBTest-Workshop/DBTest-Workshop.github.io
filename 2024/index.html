@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Workshop on Database Testing - DBTest 2024</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style type="text/css">
+            #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:12px;
+            }
+            #DLcontent h2 {
+            font-size:14px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:12px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+
+        </style>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">DB<span>Test</span></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#schedule-section" class="nav-link"><span>Schedule</span></a></li>
+	          <li class="nav-item"><a href="#proceedings-section" class="nav-link"><span>Proceedings</span></a></li>
+	          <li class="nav-item"><a href="#comitee-section" class="nav-link"><span>Organization</span></a></li>
+            <li class="nav-item"><a href="#sponsor-section" class="nav-link"><span>Sponsors</span></a></li>
+            <li class="nav-item"><a href="#keynote-speakers" class="nav-link"><span>Keynote Speakers</span></a></li>
+		        <li class="nav-item"><a href="#submission-section" class="nav-link"><span>Submission</span></a></li>
+	          <li class="nav-item cta"><a href="https://2024.sigmod.org/" target="_blank" class="nav-link">ACM SIGMOD/PODS</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero js-fullheight">
+	  	<h3 class="vr"><span>Welcome</span> to DBTest</h3>
+	  	<div id="timer" class="text-center">
+			  <div class="time" id="days"></div>
+			  <div class="time" id="hours"></div>
+			  <div class="time" id="minutes"></div>
+			  <div class="time" id="seconds"></div>
+			</div>
+		  <div class="home-slider owl-carousel js-fullheight">
+	      <div class="slider-item js-fullheight">
+	      	<div class="overlay"></div>
+	        <div class="container-fluid px-0">
+	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third order-md-last js-fullheight img" style="background-image:url(images/bg_1.jpg);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth js-fullheight d-flex align-items-start align-items-md-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text mt-4 mt-md-0">
+                        <h1 class="mb-4">10th International Workshop on <span>Testing Database Systems</span> 2024</h1>
+                        <h2 class="mb-4">June 9, 2024 in conjunction with</h2>  
+                        <p><a href="https://2024.sigmod.org/" target="_blank" class="btn btn-primary py-3 px-4">ACM SIGMOD/PODS</a> <!--a href="#" class="btn btn-white py-3 px-4">Watch Video</a></p-->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+	    </div>
+    </section>
+
+    <section class="ftco-about ftco-counter ftco-no-pb img ftco-section" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about-1.jpg);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 pt-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<span class="subheading">Welcome</span>
+		            <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About DBTest</h2>
+			    <p>
+				    Over the last few years, we have seen an increase in academic and industry work focusing on benchmarking and performance evaluation in novel cloud settings, driven both by an increase and diversity in workloads as well as hardware such as FPGAs or GPUs.
+				    Moreover, there are new classes of data-driven applications (i.e., machine learning and big data scenarios) that now need to be considered while at the same time, SQL and no-SQL engines alike are developing, and new engine concepts such as unified engines are being created.
+				    Consequentially, special testing efforts and rigor to ensure classical database strengths such as reliability, integrity, and performance are crucial for these novel system architectures and designs.
+			    </p>
+			    <p>
+				    The goal of DBTest 2024 is to bring researchers and practitioners from academia and industry together to discuss challenges, approaches and open problems around these issues.
+			    </p>
+<!--
+			<p>With the ever increasing amount of data stored and processed, there is an ongoing need of testing database management systems but also data-intensive systems in general. Specifically, emerging new technologies such as Non-Volatile Memory impose new challenges (e.g., avoiding persistent memory leaks and partial writes), and novel system designs including FPGAs, GPUs, and RDMA call for additional attention and sophistication.</p>
+			<p>Reviving the previous success of the eight previous workshops, the goal of DBTest 2024 is to bring researchers and practitioners from academia and industry together to discuss key problems and ideas related to testing database systems and applications. The long-term objective is to reduce the cost and time required to test and tune data management and processing products so that users and vendors can spend more time and energy on actual innovations. </p> 
+-->
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+
+			<section class="ftco-section bg-light" id="proceedings-section">
+    	<div class="container">
+
+
+       <title>DBTest '24: Proceedings of the Tenth International Workshop on Testing Database Systems</title></head><body><div id="DLtoc"><div id="DLheader"><h1>DBTest '24: Proceedings of the Tenth International Workshop on Testing Database Systems</h1><a class="DLcitLink" title="Go to the ACM Digital Library for additional information about this proceeding" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/proceedings/10.1145/3662165"><img class="DLlogo" alt="Digital Library logo" height="30" src="https://dl.acm.org/specs/products/acm/releasedAssets/images/footer-logo1.png">
+                Full Citation in the ACM Digital Library
+            </a></div><div id="DLcontent">
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3662165.3662763">Surprise Benchmarking: The Why, What, and How</a></h3><ul class="DLauthors"><li class="nameList">Lawrence Benson</li><li class="nameList">Carsten Binnig</li><li class="nameList">Jan-Micha Bodensohn</li><li class="nameList">Federico Lorenzi</li><li class="nameList">Jigao Luo</li><li class="nameList">Danica Porobic</li><li class="nameList">Tilmann Rabl</li><li class="nameList">Anupam Sanghi</li><li class="nameList">Russell Sears</li><li class="nameList">Pinar Tözün</li><li class="nameList Last">Tobias Ziegler</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>Standardized benchmarks are crucial to ensure a fair comparison of performance across systems. While extremely valuable, these benchmarks all use a setup where the workload is well-defined and known in advance. Unfortunately, this has led to overly-tuning data management systems for particular benchmark workloads such as TPC-H or TPC-C. As a result, benchmarking results frequently do not reflect the behavior of these systems in many real-world settings since workloads often significantly vary from the "known" benchmarking workloads. To address this issue, we present surprise benchmarking, a complementary approach to the current standardized benchmarking where "unknown" queries are exercised during the evaluation.</p>
+	</div></div>
+						
+					
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3662165.3662765">KVBench: A Key-Value Benchmarking Suite</a></h3><ul class="DLauthors"><li class="nameList">Zichen Zhu</li><li class="nameList">Arpita Saha</li><li class="nameList">Manos Athanassoulis</li><li class="nameList Last">Subhadeep Sarkar</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>Key-value stores are at the core of several modern NoSQL-based data systems, and thus, a comprehensive benchmark tool is of paramount importance in evaluating their performance under different workloads. Prior research reveals that real-world workloads have a diverse range of characteristics, such as the fraction of point queries that target non-existing keys, point and range deletes, as well as, different distributions for queries and updates, all of which have very different performance implications. State-of-the-art key-value workload generators, such as YCSB and db_bench, fail to generate workloads that emulate these practical workloads, limiting the dimensions on which we can benchmark the systems' performance.</p> <p>In this paper, we present KVBench, a novel synthetic workload generator that fills the gap between classical key-value workload generators and more complex real-life workloads. KVBench supports a wide range of operations, including point queries, range queries, inserts, updates, deletes, range deletes, and among these options, inserts, queries, and updates can be customized by different distributions. Compared to state-of-the-art key-value workload generators, KVBench offers a richer array of knobs, including the proportion of empty point queries, customized distributions for updates and queries, and range deletes with specific selectivity, constituting a significantly flexible framework that can better emulate real-world workloads.</p>
+	</div></div>
+						
+					
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3662165.3662764">Benchmarking Learned and LSM Indexes for Data Sortedness</a></h3><ul class="DLauthors"><li class="nameList">Aneesh Raman</li><li class="nameList">Andy Huynh</li><li class="nameList">Jinqi Lu</li><li class="nameList Last">Manos Athanassoulis</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>Database systems use indexes on frequently accessed attributes to accelerate query and transaction processing. This requires paying the cost of maintaining and updating those indexes, which can be thought of as the process of adding structure (e.g., sort) to an otherwise unstructured data collection. The indexing cost is redundant when data arrives pre-sorted, even if only up to some degree. While recent work has studied how classical indexes like B+-trees cannot fully exploit the near-sortedness during ingestion, there is a lack of this exploration on other index designs like read-optimized learned indexes or write-optimized LSM-trees.</p> <p>In this paper, we bridge this gap by conducting the first-ever study on the behavior of learned indexes and LSM-trees when varying the data sortedness in an ingestion workload. Specifically, we build on prior work on benchmarking data sortedness on B+-trees and we expand the scope to benchmark: (i) ALEX and LIPP, which are updatable learned index designs; and (ii) the LSM-tree engine offered by RocksDB. We present our evaluation framework and detail key insights on the performance of the index designs when varying data sortedness. Our observations indicate that learned indexes exhibit unpredictable performance when ingesting differently sorted data, while LSM-trees can benefit from sortedness-aware optimizations. We highlight the potential headroom for improvement and lay the groundwork for further research in this domain.</p>
+	</div></div>
+						
+					
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3662165.3662766">Anatomy of the LSM Memory Buffer: Insights &amp; Implications</a></h3><ul class="DLauthors"><li class="nameList">Shubham Kaushik</li><li class="nameList Last">Subhadeep Sarkar</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>Log-structured merge (LSM) tree is an ingestion-optimized data structure that is widely used in modern NoSQL key-value stores. To support high throughput for writes, LSM-trees maintain an in-memory buffer that absorbs the incoming entries before writing them to slower secondary storage. We point out that the choice of the data structure and implementation of the memory buffer has a significant impact on the overall performance of LSM-based storage engines. In fact, even with the same implementation of the buffer, the performance of a storage engine can vary by up to several orders of magnitude if there is a shift in the input workload.</p> <p>In this paper, we benchmark the performance of LSM-based storage engines with different memory buffer implementations and under different workload characteristics. We experiment with four buffer implementations, namely, (i) vector, (ii) skip-list, (iii) hash skip-list, and (iv) hash linked-list, and for each implementation, we vary any design choices (such as bucket count in a hash skip-list and prefix length in a hash linked-list). We present a comprehensive performance benchmark for each buffer configuration, and highlight how the relative performance of the different buffer implementations varies with a shift in input workload. Lastly, we present a guideline for selecting the appropriate buffer implementation for a given workload and performance goal.</p>
+	</div></div>
+						
+					
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3662165.3662762">Performance Truthfulness of Differential Privacy for DB Testing</a></h3><ul class="DLauthors"><li class="nameList">Eric Enzler</li><li class="nameList">Olivier Goerens</li><li class="nameList">Gustavo Alonso</li><li class="nameList Last">Anja Gruenheid</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>Performance benchmarking is a crucial tool to evaluate whether performance degradation occurs when a system is modified, allowing cloud providers to plan the provisioning of and changes to their resources. This is most commonly realized through the execution of standardized industry benchmarks. However, these benchmarks oftentimes do not capture all facets of actual customer workloads. To mitigate this issue, one can use an anonymized version of the customer's workload through algorithms such as hashing, k-anonymity, or differential privacy, allowing for targeted and customized performance benchmarking. In this paper, we focus on one of these techniques, namely differential privacy, and examine its impact on benchmarking performance, i.e., whether differential privacy can maintain the same performance characteristics as the original workload. We discuss several challenges specific to differential privacy algorithms such as the handling of unique column values, queries that span multiple tables, and continuous values, as well as how effectively it can be deployed. Our examination shows that differential privacy is a promising technique in this space but has practical limitations such as scaling problems and, for some queries, a distortion of the performance characteristics.</p>
+	</div></div>
+						
+					
+						<h3><a class="DLtitleLink" title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3662165.3662761">Analysis of Geospatial Data Loading</a></h3><ul class="DLauthors"><li class="nameList">Aske Wachs</li><li class="nameList Last">Eleni Tzirita Zacharatou</li></ul><div class="DLabstract"><div style="display:inline">
+		<p>The rate at which applications gather geospatial data today has turned data loading into a critical component of data analysis pipelines. However, users are confronted with multiple file formats for storing geospatial data and an array of systems for processing it. To shed light on how the choice of file format and system affects performance, this paper explores the performance of loading geospatial data stored in diverse file formats using different libraries. It aims to study the impact of different file formats, compare loading throughput across spatial libraries, and examine the microarchitectural behavior of geospatial data loading. Our findings show that GeoParquet files provide the highest loading throughput across all benchmarked libraries. Furthermore, we note that the more spatial features per byte a file format can store, the higher the data loading throughput. Our micro-architectural analysis reveals high instructions per cycle (IPC) during spatial data loading for most libraries and formats. Additionally, our experiments show that instruction misses dominate L1 cache misses, except for GeoParquet files, where data misses take over.</p>
+	</div></div>
+						
+					</div></div>
+    </section>
+
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+    	<div class="container-fluid px-0">
+    		<div class="row no-gutters">
+	  			<div class="col-md-6 col-lg-3 ftco-animate">
+	  				<div class="gallery img" style="background-image: url(images/gallery-1.jpg);">
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-lg-3 ftco-animate">
+	  				<div class="gallery img" style="background-image: url(images/gallery-2.jpg);">
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-lg-3 ftco-animate">
+	  				<div class="gallery img" style="background-image: url(images/gallery-3.jpg);">
+	  				</div>
+	  			</div>
+	  			<div class="col-md-6 col-lg-3 ftco-animate">
+	  				<div class="gallery img" style="background-image: url(images/gallery-4.jpg);">
+	  				</div>
+	  			</div>
+    		</div>
+    	</div>
+    </section>
+		
+		<section class="ftco-section ftco-subscribe img" style="background-image: url(images/bg_2.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-14 heading-section heading-section-white text-left ftco-animate">
+            <h2 class="mb-4">Topics Of Interest</h2>
+            <p><ul>
+				<li>Reproducibility of database research (new!)</li>
+				<li>Testing and benchmarking of learning-based database systems (new!)</li>
+                <li>Testing of database systems, storage services, and database applications </li>
+                <li>Testing of database systems using novel hardware and software technology (non-volatile memory, hardware transactional memory, …)</li>
+                <li>Testing heterogeneous systems with hardware accelerators (GPUs, FPGAs, ASICs, …)</li>
+                <li>Testing distributed and big data systems</li>
+                <li>Testing machine learning systems</li>
+                <li>Specific challenges of testing and quality assurance for cloud-based systems</li>
+                <li>War stories and lessons learned</li>
+                <li>Performance and scalability testing</li>
+                <li>Testing the reliability and availability of database systems</li>
+                <li>Algorithms and techniques for automatic program verification</li>
+                <li>Maximizing code coverage during testing of database systems and applications</li>
+                <li>Generation of synthetic data for test databases
+                <li>Testing the effectiveness of adaptive policies and components
+                <li>Tools for analyzing database management systems (e.g., profilers, debuggers)</li>
+                <li>Workload characterization with respect to performance metrics and engine components</li>
+                <li>Metrics for test quality, robustness, efficiency, and effectiveness</li>
+                <li>Operational aspects such as continuous integration and delivery pipelines</li>
+                <li>Security and vulnerability testing</li>
+                <li>Experimental reproduction of benchmark results</li>
+                <li>Functional and performance testing of interactive data exploration systems</li>
+                <li>Tracability, reproducibility and reasoning for ML-based systems</li>
+            </ul></p>
+          </div>
+        </div>
+		</div>
+		</section>
+
+
+
+
+  <section class="ftco-section" id="keynote-speakers">
+
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <span class="subheading">Keynote Speakers</span>
+        </div> 
+      </div>
+      <div class="row">
+        <div class=" ftco-animate">
+          <div class="">
+            <div>
+              <h3 class="mb-4">Everett (Ev) Maus <br />
+              Staff Software Engineer, Google</h3>
+            </div>
+            <p>Ev has a passion for teaching computers to find bugs – ideally without making other developers too unhappy.</p>
+
+            <p>He's been on the Spanner Engineering Productivity team at Google in 2018, where he’s building tooling to sustainably ensure the correctness and reliability of Spanner. He was an invited industry attendee at the 2023 Daghstul Seminar on Ensuring the Reliability and Robustness of Database Management Systems.</p>
+
+            <p>Prior to Google, he worked at Microsoft from 2014 to 2018 on scaling static analysis and security tooling. While there, he contributed to the SARIF standard for tooling results and spoke at BlueHat about building security tooling.</p>
+
+            <p>When he isn’t trying to teach computers to break software (usually other people’s), he collects fountain pens, mixes a decent manhattan, plays violin, and recently adopted a puppy.</p>
+
+            <p>He graduated from the University of Virginia with a BA in Computer Science and Mathematics in December 2013.</p>
+          </div>
+        </div>
+        <div class="ftco-animate">
+          <div class="">
+            <div>
+              <h3 class="mb-4">Jesús Camacho Rodríguez<br />
+              Principal Research SDE Manager, Gray Systems Lab (GSL)
+              </h3>
+            </div>
+          <p>Jesús is a Principal Research SDE Manager at the Gray Systems Lab (GSL), the applied research group within Azure Data. His research focuses broadly on optimizing data systems performance and efficiency, with close collaboration with product and engineering teams.</p>
+
+          <p>Before joining Microsoft, Jesús held various engineering positions at Cloudera, where he worked on query processing and optimization in Cloudera’s SQL data warehouse engines. He has also been actively involved with open-source projects such as Apache Calcite and Apache Hive.</p>
+
+          <p>Jesús earned his PhD from the University of Paris-Sud and Inria, France, and holds a degree in Computer Science and Engineering from the University of Almería, Spain.</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </section>
+  
+  <section class="ftco-section" id="submission-section">
+
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <span class="subheading">Call for Contributions</span>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-md-6 ftco-animate">
+          <div class="pricing-entry-green pb-5 text-center">
+            <div>
+              <h3 class="mb-4">Research or Experience Papers</h3>
+            </div>
+            <p>Authors are invited to submit original, unpublished research papers, or experience papers that describe the implementation of testing-related solutions in applications and products that are not being considered for publication in any other forum pertaining to any of the topics listed above as DBTest's topics of interest.</p>
+            <p>The authors' submission is expected to contain 4 to 6 pages excluding references and appendix.</p>
+          	<p>Accepted research submissions will be published in the ACM DL.</p>
+		  </div>
+        </div>
+        <div class="col-md-6 ftco-animate">
+          <div class="pricing-entry-green pb-5 text-center">
+            <div>
+              <h3 class="mb-4">Talks</h3>
+            </div>
+            <p>Authors can submit a talk proposal for previously published but relevant content as well as new ideas within the scope of DBTest's topics of interest that they want feedback from the community on.</p>
+            <p>The submission should consist of 1 page including references and appendix. Talk proposals need to be marked with the suffix [Talk Proposal] in the submission's title.</p>
+			<p>Accepted talk proposals will be listed on the DBTest homepage.</p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="row">
+        <div class="col-md-6 ftco-animate">
+          <div class="pricing-entry pb-25 text-center">
+            <div>
+              <h3 class="mb-4">Guidelines</h3>
+              <p>Authors are required to follow the <a href="https://www.acm.org/publications/proceedings-template" target="_blank"> current ACM Proceedings Format</a>.</p>
+              <p>The submission will be handled through <a href="https://dbtest24.hotcrp.com/">HotCRP</a>.</p>
+              <br>
+              <p class="button text-center"><a href="https://dbtest24.hotcrp.com/" target="_blank" class="btn btn-primary px-4 py-3">HotCRP</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 ftco-animate">
+          <div class="pricing-entry pb-25 text-center">
+            <div>
+              <h3 class="mb-4">Timeline</h3>
+
+              <p><span class="price">March 15**, 2024</span> <span class="per">/ 11:59PM US PST</span></p>
+              <h6 class="mb-4">Paper Submission</h6>
+
+              <p><span class="price">April 11, 2024</span> <span class="per">/ 11:59PM US PST</span></p>
+              <h6 class="mb-4">Notification Of Outcome</h6>
+
+              <p><span class="price">May 6, 2024</span> <span class="per">/ 11:59PM US PST</span></p>
+              <h6 class="mb-4">Camera-Ready Copy</h6>
+
+              ** Extended deadline from March 8th 2024.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+		<section class="ftco-section bg-light" id="schedule-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading">Schedule</span>
+            <h2 class="mb-4">Program Schedule</h2>
+            
+
+<table class="table-bordered table-striped" style="color:black">
+  <tr>
+	<th style="width: 10%">Start Time</th>
+    <th style="width: 35%">Title</th>
+    <th>Presenter</th>
+	<th>Recording</th>
+	<th>Slides</th>
+  </tr>
+  <tr><td>8:30 AM</td><td>Keynote 1: Transactions on Exabytes: What we've learned while testing Spanner</td><td>Everett (Ev) Maus</td><td></td><td></td></tr>
+  <tr><td>10:00 AM</td><td>Break</td><td></td><td></td><td><a href='' target="_blank"></a></td><td><a href='' target="_blank"></a></td></tr>
+  <tr><td>10:30 AM</td><td>Surprise Benchmarking: The Why, What, and How</td><td>Lawrence Benson, Carsten Binnig, Jan-Micha Bodensohn, Federico Lorenzi, Jigao Luo, Danica Porobic, Tilmann Rabl, Anupam Sanghi, Russell Sears, Pinar Tözün, Tobias Ziegler
+</td><td></td><td></td></tr>
+  <tr><td>11:00 AM</td><td>KVBench: A Key-Value Benchmarking Suite</td><td>Zichen Zhu, Arpita Saha, Manos Athanassoulis, Subhadeep Sarkar
+</td><td></td><td></td></tr>
+  <tr><td>11:30 AM</td><td>Benchmarking Learned and LSM Indexes for Data Sortedness</td><td>Aneesh Raman, Andy Huynh, Jinqi Lu, Manos Athanassoulis
+</td><td></td><td><a href='' target="_blank"></a></td><td><a href='' target="_blank"></a></td></tr>
+  <tr><td>12:00 PM</td><td>Lunch</td><td></td><td></td><td></td></tr>
+  <tr><td>2:00 PM</td><td>Keynote 2: From Paper to Practice: Leveraging LST-Bench to Evaluate Lake-Centric Data Platforms</td><td>Jesús Camacho Rodríguez</td><td></td><td></td></tr>
+  <tr><td>3:30 PM</td><td>Break</td><td></td><td></td><td></td></tr>
+  <tr><td>4:00 PM</td><td>Anatomy of the LSM Memory Buffer: Insights & Implications</td><td>Shubham Kaushik, Subhadeep Sarkar</td><td></td><td></td></tr>
+  <tr><td>4:30 PM</td><td>Performance Truthfulness of Differential Privacy for DB Testing</td><td>Eric Enzler, Olivier Goerens, Gustavo Alonso, Anja Gruenheid
+  </td><td><a href='' target="_blank"></a></td><td></td><td><a href='' target="_blank"></a></td></tr>
+  <tr><td>5:00 PM</td><td>Utilizing Query Plans for Testing</td><td>Jinsheng Ba</td><td><a href='' target="_blank"></a></td><td></td><td><a href='' target="_blank"></a></td></tr>
+  <tr><td>5:30 PM</td><td>Analysis of Geospatial Data Loading</td><td>Aske Wachs, Eleni Tzirita Zacharatou
+</td><td><a href='' target="_blank"></a></td><td></td><td><a href='' target="_blank"></a></td></tr>
+</table>
+</div>
+<br/>
+          </div>
+        </div>
+
+
+ 
+		<section class="ftco-section ftco-speakers" id="comitee-section">
+                   <div class="container">
+                       <center>
+                       <div class="row justify-content-center pb-5">
+                 <div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+                   <span class="subheading">Organization</span>
+                  
+  
+                           <div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+                                       <center>
+                                             <h2 class="mb-4">Program Committee</h2>
+
+                           
+                           <div class="row", text-align:center>
+                              <div class="col-sm-12 col-md-12 col-lg-12 ftco-animate">
+                               <div class="staff">
+                                   <div>
+Adam Dickinson (Snowflake) <br/>
+Amarnadh Sai Eluri (Google) <br/>
+Anupam Sanghi (IBM Research) <br/>
+Brian Kroth (Microsoft GSL) <br/>
+Danica Porobic (Oracle) <br/>
+Daniel Ritter (SAP) <br/>
+Jinsheng Ba (NUS) <br/>
+Renata Borovica-Gajic (University of Melbourne) <br/>
+Russell Sears (CrystalDB) <br/>
+Stefania Dumbrava (ENSIIE) <br/>
+Wensheng Dou (University of Chinese Academy of Sciences) <br/>
+Xiu Tang (Zhejiang University) <br/>
+Yannis Chronis (Google Research) <br/>
+Zuming Jiang (ETH) <br/>
+                                   </div>
+                                   </div>
+                         
+                                                 
+                       </div>
+                   </div>
+               </center>
+                                     
+                                                         
+                                                      
+                                                         <div class="row justify-content-center pb-5">
+                                                                                 <div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+                                                              
+                                                                                   <h2 class="mb-4">Workshop Co-Chairs</h2>
+                                                                                 </div>
+                                                                               </div>
+                                                     
+                                                     
+                                                    
+                                                                   
+                                                                   <div class="row">
+                                                                               <div class="col-sm-12 col-md-6 col-lg-6 ftco-animate">
+                                                                                   <div class="staff">
+                                                                                       <div class="img-wrap d-flex align-items-stretch justify-content-end">
+                                                                                           
+                                                                                       </div>
+                                                                                       <div class="text d-flex align-items-center pt-3">
+                                                                                           <div>
+                                                                                                 <h3 class="mb-2"><a href="mailto:">Anja <br>Gruenheid</a></h3>
+                                                                                               <span class="position mb-4">Microsoft, Switzerland</span>
+                                                                               </div>
+                                                                                       </div>
+                                                                                   </div>
+                                                                               </div>
+                                                                               <div class="col-sm-12 col-md-6 col-lg-6 ftco-animate">
+                                                                                   <div class="staff">
+                                                                                       
+                                                                                       <div class="text d-flex align-items-center pt-3">
+                                                                                           <div>
+                                                                                                 <h3 class="mb-2"><a href="mailto:rigger@nus.edu.sg">Manuel <br>Rigger</a></h3>
+                                                                                               <span class="position mb-4">National University of Singapore</span>
+                                                                               </div>
+                                                                                       </div>
+                                                                                   </div>
+                                                                             
+                                                                               
+                                             
+                                                       </div>
+                                                                               
+                                                                               </div>
+                                                                               <div class="row justify-content-center pb-5">
+                                                                                                                                                             <div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+                                                                               
+                                                                               <h2 class="mb-4">Steering Committee</h2>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                  <div class="row">
+                                                                                                                                              <div class="col-sm-12 col-md-4 col-lg-4 ftco-animate">
+                                                                                                                                                  <div class="staff">
+                                                                                                                                                      <div class="img-wrap d-flex align-items-stretch justify-content-end">
+                                                                                                                                                          
+                                                                                                                                                      </div>
+                                                                                                                                                      <div class="text d-flex align-items-center pt-3">
+                                                                                                                                                          <div>
+                                                                                                                                                                <h3 class="mb-2"><a href="mailto:carsten@dbtest.io?subject=DBTest">Carsten <br>Binnig</a></h3>
+                                                                                                                                                              <span class="position mb-4">TU Darmstadt, Germany</span>
+                                                                                                                                              </div>
+                                                                                                                                                      </div>
+                                                                                                                                                  </div>
+                                                                                                                                              </div>
+                                                                                                                                              <div class="col-sm-12 col-md-4 col-lg-4 ftco-animate">
+                                                                                                                                                  <div class="staff">
+                                                                                                                                                      
+                                                                                                                                                      <div class="text d-flex align-items-center pt-3">
+                                                                                                                                                          <div>
+                                                                                                                                                              <h3 class="mb-2"><a href="mailto:alexander@dbtest.io?subject=DBTest">Alexander <br>Böhm</a></h3>
+                                                                                                                                                              <span class="position mb-4">Google, Germany</span>
+                                                                                                                                              </div>
+                                                                                                                                                      </div>
+                                                                                                                                                  </div>
+                                                                                                                                              </div>
+                                                                                                                                              <div class="col-sm-12 col-md-4 col-lg-4 ftco-animate">
+                                                                                                                                                  <div class="staff">
+                                                                                                                                                      
+                                                                                                                                                      <div class="text d-flex align-items-center pt-3">
+                                                                                                                                                          <div>
+                                                                                                                                                                <h3 class="mb-2"><a href="mailto:tilmann@dbtest.io?subject=DBTest">Tilmann <br>Rabl</a></h3>
+                                                                                                                                                              <span class="position mb-4">TU Berlin, Germany</span>
+                                                                                                                                              </div>
+                                                                                                                                                      </div>
+                                                                                                                                                  </div>
+                                                                                                                                              </div>
+                                                                                                                                      
+                                                     
+                                       
+               </section>
+        
+ 
+
+
+<!-- 
+    <section class="ftco-section bg-light" id="sponsor-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Support</span>
+            <h2 class="mb-4">Our Sponsors</h2>
+            <p>DBTest is supported by the following sponsors:</p>
+
+        <div>
+                           <figure><a href="https://www.sap.com/" target="_blank"><img src="images/sap.png" style="width:224px;"/></a></figure>
+                           <figure><a href="https://singularity-data.com/" target="_blank"><img src="images/singularity.jpg" style="width:224px;"/></a></figure>
+		-->
+	</div>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+              
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About DBTest</h2>
+              <p>Fail early, fail often, but always fail forward -- John C. Maxwell</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://twitter.com/Dbtest_io" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.youtube.com/channel/UCK6KE6oJvqF2YHm1qa065Og" target="_blank"><span class="icon-youtube"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#comitee-section"><span class="icon-long-arrow-right mr-2"></span>Organization</a></li>
+                <li><a href="#schedule-section"><span class="icon-long-arrow-right mr-2"></span>Schedule</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Previous Editions</h2>
+              <ul class="list-unstyled">
+                <li><a href="https://dsg.uwaterloo.ca/dbtest2011/" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2011</a></li>
+                <li><a href="http://dbtest2012.comp.polyu.edu.hk/" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2012</a></li>
+                <li><a href="https://dbtest2013.soe.ucsc.edu/index.htm" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2013</a></li>
+                <li><a href="http://dbtest.dima.tu-berlin.de/" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2018</a></li>
+                <li><a href="2020/index.html" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2020</a></li>
+                <li><a href="2022/index.html" target="_blank"><span class="icon-long-arrow-right mr-2"></span>DBTest 2022</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Venue (co-located with SIGMOD/PODS)</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+                      
+	                <li><span class="icon icon-map-marker"></span><span class="text">Santiago, Chile</span></li>
+	                
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
