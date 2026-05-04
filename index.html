@@ -393,34 +393,144 @@
             <h2 class="mb-4">Program Schedule</h2>
             
 
-<!--<table class="table-bordered table-striped" style="color:black">
-  <tr>
-	<th style="width: 10%">Start Time</th>
-    <th style="width: 35%">Title</th>
-    <th>Presenter</th>
-	<th>Recording</th>
-	<th>Slides</th>
-  </tr>
-  <tr><td>8:30 AM</td><td>Keynote 1: Transactions on Exabytes: What we've learned while testing Spanner</td><td>Everett (Ev) Maus</td><td></td><td></td></tr>
-  <tr><td>10:00 AM</td><td>Break</td><td></td><td></td><td><a href='' target="_blank"></a></td><td><a href='' target="_blank"></a></td></tr>
-  <tr><td>10:30 AM</td><td>Surprise Benchmarking: The Why, What, and How</td><td>Lawrence Benson, Carsten Binnig, Jan-Micha Bodensohn, Federico Lorenzi, Jigao Luo, Danica Porobic, Tilmann Rabl, Anupam Sanghi, Russell Sears, Pinar Tözün, Tobias Ziegler
-</td><td></td><td></td></tr>
-  <tr><td>11:00 AM</td><td>KVBench: A Key-Value Benchmarking Suite</td><td>Zichen Zhu, Arpita Saha, Manos Athanassoulis, Subhadeep Sarkar
-</td><td></td><td></td></tr>
-  <tr><td>11:30 AM</td><td>Benchmarking Learned and LSM Indexes for Data Sortedness</td><td>Aneesh Raman, Andy Huynh, Jinqi Lu, Manos Athanassoulis
-</td><td></td><td><a href='' target="_blank"></a></td><td><a href='' target="_blank"></a></td></tr>
-  <tr><td>12:00 PM</td><td>Lunch</td><td></td><td></td><td></td></tr>
-  <tr><td>2:00 PM</td><td>Keynote 2: From Paper to Practice: Leveraging LST-Bench to Evaluate Lake-Centric Data Platforms</td><td>Jesús Camacho Rodríguez</td><td></td><td></td></tr>
-  <tr><td>3:30 PM</td><td>Break</td><td></td><td></td><td></td></tr>
-  <tr><td>4:00 PM</td><td>Anatomy of the LSM Memory Buffer: Insights & Implications</td><td>Shubham Kaushik, Subhadeep Sarkar</td><td></td><td></td></tr>
-  <tr><td>4:30 PM</td><td>Performance Truthfulness of Differential Privacy for DB Testing</td><td>Eric Enzler, Olivier Goerens, Gustavo Alonso, Anja Gruenheid
-  </td><td><a href='' target="_blank"></a></td><td></td><td><a href='' target="_blank"></a></td></tr>
-  <tr><td>5:00 PM</td><td>Utilizing Query Plans for Testing</td><td>Jinsheng Ba</td><td><a href='' target="_blank"></a></td><td></td><td><a href='' target="_blank"></a></td></tr>
-  <tr><td>5:30 PM</td><td>Analysis of Geospatial Data Loading</td><td>Aske Wachs, Eleni Tzirita Zacharatou
-</td><td><a href='' target="_blank"></a></td><td></td><td><a href='' target="_blank"></a></td></tr>
-</table>-->
-</div>
-<br/>
+            <style>
+              table.program-schedule {
+                width: 100%;
+                table-layout: fixed; /* makes column widths consistent */
+              }
+
+              .break-row td {
+                background: #f3f4f6;
+                font-weight: 700;
+                text-align: center;
+                border-top: 2px solid #9ca3af;
+                border-bottom: 2px solid #9ca3af;
+              }
+              .session-row td {
+                background: #eef2ff;
+                font-weight: 700;
+                text-align: left;
+                border-top: 2px solid #c7d2fe;
+              }
+
+              /* Optional: slightly nicer wrapping */
+              .wrap {
+                white-space: normal;
+                word-break: normal;
+                overflow-wrap: anywhere;
+              }
+            </style>
+
+            <table class="table-bordered table-striped program-schedule" style="color:black">
+              <tr>
+                <th style="width: 10%">Start Time</th>
+                <th style="width: 60%">Title</th>
+                <th style="width: 30%">Presenter</th>
+              </tr>
+
+              <!-- Session 1 -->
+              <tr class="session-row">
+                <td colspan="3">08:30–10:30 — Session 1: Foundations of Database Testing</td>
+              </tr>
+              <tr>
+                <td>8:30 AM</td>
+                <td class="wrap">Welcome and introduction (chairs)</td>
+                <td class="wrap"></td>
+              </tr>
+              <tr>
+                <td>8:40 AM</td>
+                <td class="wrap">Keynote</td>
+                <td class="wrap">Giorgio Ghelli (University of Pisa)</td>
+              </tr>
+              <tr>
+                <td>9:40 AM</td>
+                <td class="wrap">DIRT: Database-Integrated Random Testing</td>
+                <td class="wrap">A. Keles, E. Chou, H. Goldstein, L. Lampropoulos</td>
+              </tr>
+              <tr>
+                <td>10:05 AM</td>
+                <td class="wrap">Boosting DBMS Test Coverage via LLM-Driven SQL Generation</td>
+                <td class="wrap">E. Abdelkarim, C. Binnig, A. Sanghi</td>
+              </tr>
+
+              <!-- Coffee Break -->
+              <tr class="break-row">
+                <td colspan="3">10:30–11:00 — Coffee Break</td>
+              </tr>
+
+              <!-- Session 2 -->
+              <tr class="session-row">
+                <td colspan="3">11:00–12:30 — Session 2: Systems and Practice</td>
+              </tr>
+              <tr>
+                <td>11:00 AM</td>
+                <td class="wrap">Keynote</td>
+                <td class="wrap">Karthik Ramachandra (Microsoft)</td>
+              </tr>
+              <tr>
+                <td>12:00 PM</td>
+                <td class="wrap">Bridging the Procedural Code Gap: Agentic Database Migration with Execution-Grounded Validation</td>
+                <td class="wrap">J. Yu</td>
+              </tr>
+
+              <!-- Lunch -->
+              <tr class="break-row">
+                <td colspan="3">12:30–13:30 — Lunch</td>
+              </tr>
+
+              <!-- Session 3 -->
+              <tr class="session-row">
+                <td colspan="3">13:30–15:00 — Session 3: Reliability and CI for Data Systems</td>
+              </tr>
+              <tr>
+                <td>1:30 PM</td>
+                <td class="wrap">The Risk and Reward of Cross-Engine Query Partitioning: A Case for Partition-Aware Benchmarking</td>
+                <td class="wrap">I. Giurgiu, S. Barrada, S. Gupta, M. Nidd</td>
+              </tr>
+              <tr>
+                <td>1:55 PM</td>
+                <td class="wrap">Benchmarking Spatial Operations over Heterogeneous Data: The Case of Zonal Statistics</td>
+                <td class="wrap">G. Dusella, H. Gavriilidis, V. Markl, E. Zacharatou</td>
+              </tr>
+              <tr>
+                <td>2:20 PM</td>
+                <td class="wrap">Multi-Tiered Microbenchmark Regression Detection in a Production Database CI Pipeline</td>
+                <td class="wrap">H. Lategan</td>
+              </tr>
+              <tr>
+                <td>2:35 PM</td>
+                <td class="wrap">Continuous Resilience Testing of a Distributed Database in Long-Running Clusters</td>
+                <td class="wrap">S. Patel, C. Jain</td>
+              </tr>
+
+              <!-- Coffee Break -->
+              <tr class="break-row">
+                <td colspan="3">15:00–15:30 — Coffee Break</td>
+              </tr>
+
+              <!-- Session 4 -->
+              <tr class="session-row">
+                <td colspan="3">15:30–16:30 — Session 4: Benchmarking Modern Data Platforms</td>
+              </tr>
+              <tr>
+                <td>3:30 PM</td>
+                <td class="wrap">Benchmarking Column Statistics for Analytical Query Pruning</td>
+                <td class="wrap">A. Pedersen, E. Yousefzadeh-Asl-Miandoab, I. Oukid, M. Hentschel</td>
+              </tr>
+              <tr>
+                <td>3:55 PM</td>
+                <td class="wrap">Cloud Analytics Benchmarking: Where We Are, What Is Missing, and Where We Should Go</td>
+                <td class="wrap">M. Georgoulakis Misegiannis, T. Steinert, V. Leis, M. El-Hindi</td>
+              </tr>
+              <tr>
+                <td>4:20 PM</td>
+                <td class="wrap">Closing / discussion</td>
+                <td class="wrap"></td>
+              </tr>
+            </table>
+
+            </div>
+            <br/>
           </div>
         </div>
 
